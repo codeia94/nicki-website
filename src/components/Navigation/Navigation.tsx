@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from 'lucide-react'
-import MySvgIcon from "../nkSvgIcon";
+import MySvgIcon from "../NkSvgIcon";
 
 
 export default function Navigation (){
@@ -38,9 +38,9 @@ export default function Navigation (){
   }
 
 	return (
-	<header className="fixed top-0 text-black w-screen">
-		<nav className="flex px-8 justify-between w-screen">
-			<MySvgIcon className='w-16 h-16' />
+	<header className="fixed z-50 top-0 text-black flex w-screen justify-center">
+		<nav className="flex px-8 justify-between w-screen max-w-5xl">
+			<MySvgIcon className='w-20 h-20' />
 			<div className="hidden sm:flex space-x-4">
 				{['About', 'Gallery', 'Testimonials', 'Contact'].map((item) => (
 					<button
@@ -55,11 +55,11 @@ export default function Navigation (){
 				))}
 			</div>
 			<button className="sm:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-				{isMenuOpen ? <X size={18} /> : <Menu size={18} />}
+				{isMenuOpen ? <X size={20} /> : <Menu size={20} />}
 			</button>
 		</nav>
 		{isMenuOpen && (
-			<div className="sm:hidden bg-red-300 p-4">
+			<div className="sm:hidden bg-red-300 p-4 ">
 				{['About', 'Gallery', 'Testimonials', 'Contact'].map((item) => (
 					<button
 						key={item}
