@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #EDEDED;
+    --foreground: #000000;
+    --primary-foreground: #000000;
+    --seconday-foreground: #0043A8;
+  }
+  
+  @media (dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
   }
 }
 
@@ -18,4 +22,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-bg {
+  background-image: url('../../public/image/nicki-chicken-rice.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
 }
