@@ -32,13 +32,13 @@
     --radius: 0.5rem;
   }
   
-  @media (dark) {
+  /* @media (dark) {
     :root {
       --background: #0a0a0a;
       --foreground: #ededed;
     }
-  }
-  .dark {
+  } */
+  /* .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -63,19 +63,11 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-  }
+  } */
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.custom-bg {
-  background-image: url('../../public/image/nicki-chicken-rice.jpeg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-
+  font-family: Arial, Helvetica, sans-serif, serif;
 }
 
 @layer base {
@@ -85,4 +77,25 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .animate-underline {
+    @apply absolute left-0 bottom-0 w-full h-[2px] bg-blue-200 scale-x-0 group-hover:scale-x-100 transition-transform origin-left;
+  }
+}
+
+.custom-bg {
+  background-image: url('../../public/logo/nicki-chicken-rice.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+.font-quintessential {
+  font-family: var(--font-quintessential), sans-serif;
+}
+
+.font-oldStandardReg {
+  font-family: var(--font-old-standard-tt-regular), sans-serif;
 }

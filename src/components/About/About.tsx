@@ -16,7 +16,7 @@ export default function About() {
 					</div>
 					<div className='max-w-[768px] lg:w-1/2'>
 						<BoxReveal boxColor={"#5046e6"} duration={0.5}>
-							<p className='text-4xl lg:text-5xl font-serif mb-4 text-nk-blue '>We make people fall in love with our culture</p>
+							<p className='text-4xl lg:text-5xl  mb-4 text-nk-blue font-quintessential font-semibold tracking-wider '>We make people fall in love with our culture</p>
 						</BoxReveal>
 						<BoxReveal boxColor={"#5046e6"} duration={0.5}>
 							<p className="mb-4 text-justify w-max-[800px]">

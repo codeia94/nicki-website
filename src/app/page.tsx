@@ -11,7 +11,7 @@ export default function HomePage () {
   return (
     <div>
       <Navigation />
-      <main className='mt-10'>
+      <main className='pt-10'>
         <Hero />
         <About />
         <Gallery />
