@@ -1,0 +1,1 @@
+// add Marquee  https://magicui.design/docs/components/marquee
