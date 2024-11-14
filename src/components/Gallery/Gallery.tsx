@@ -29,6 +29,7 @@ export default function Gallery () {
 						<div key={index} className="carousel-item">
 							<img 
 								src={image} 
+								loading="lazy"
 								alt="chicken rice" 
 								className="w-full max-w-[300px] h-auto object-cover"
 							/>							

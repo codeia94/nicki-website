@@ -47,7 +47,7 @@ export default function Navigation (){
 				</Link>
 			)}
 				<div className="hidden sm:flex space-x-4 font-medium">
-					{['About', 'Gallery', 'Testimonials', 'Contact'].map((item) => (
+					{['About', 'Pricing', 'Testimonials', 'Contact'].map((item) => (
 						<Link
 							key={item}
 							onClick={(e) => {
@@ -72,7 +72,7 @@ export default function Navigation (){
 			{isMenuOpen && (
 				//add w-screen and h-screen below
 				<div className="sm:hidden py-12 w-screen h-screen text-4xl flex flex-col justify-around ">
-					{['About', 'Gallery', 'Testimonials', 'Contact'].map((item) => (
+					{['About', 'Pricing', 'Testimonials', 'Contact'].map((item) => (
 						<div 
 							key={item}
 							className='flex justify-center hover:underline hover:underline-offset-4 hover:scale-110 duration-300 font-oldStandardReg'
