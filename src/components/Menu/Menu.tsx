@@ -6,6 +6,7 @@ import { CircleHelp } from 'lucide-react'
 import {Tooltip} from "@nextui-org/tooltip";
 
 type MenuItem = {
+	alt: string
   name: string;
   description: string;
   image: string;
