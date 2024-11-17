@@ -1,7 +1,5 @@
 import { Card, CardFooter, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { Label } from "@/components/ui/label"
-import { useState, useEffect, AwaitedReactNode, JSXElementConstructor, ReactElement, ReactNode, ReactPortal } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Separator } from "../ui/separator"
 
@@ -32,9 +30,9 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center mb-8">Our Menu</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section id="menu" className="container  mx-auto px-4 py-12 flex flex-col items-center">
+      <h2 className="text-6xl text-center mb-8 font-quintessential font-semibold tracking-wider">Our Menu</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl">
 			{menu.map((item, index) => (
 				<Card key={index} className='flex flex-col'>
 					<Image 
@@ -66,7 +64,7 @@ useEffect(() => {
 						<small className='text-xs'>Whole chicken comes with 6 portions</small>
 					</CardFooter>
 				</Card>
-			))};
+			))}
       </div>
     </section>
   );

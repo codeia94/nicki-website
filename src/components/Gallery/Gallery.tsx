@@ -22,7 +22,7 @@ export default function Gallery () {
 	}, []);
 
 	return(
-		<section className='flex justify-center my-4' >
+		<section className='flex justify-center my-10' >
 			<div className='mx-8 max-w-5xl'>
 				<div className="carousel carousel-center rounded-box justify-center">
 					{images.map((image, index) => (
