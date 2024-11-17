@@ -1,0 +1,24 @@
+{
+  "menuItem": [
+    {
+      "name": "Poached Chicken Rice",
+      "alt": "poached chicken rice",
+      "description": "Poached chicken served on a bed of fragrant, aromatic rice, accompanied by fresh cucumber slices and Nicki’s signature homemade chili sauce for a flavorful kick.",
+      "image": "/image/gallery/pc1.jpg",
+      "options": [
+        { "name": "Per portion", "price": "$10" },
+        { "name": "Whole Chicken", "price": "$60" }
+      ]
+    },
+    {
+      "name": "Roasted Chicken Rice",
+      "alt": "roasted chicken rice",
+      "description": "Roasted chicken served on a bed of fragrant, aromatic rice, accompanied by fresh cucumber slices and Nicki’s signature homemade chili sauce for a flavorful kick.",
+      "image": "/image/gallery/rc5.jpg",
+      "options": [
+        { "name": "Per portion", "price": "$10" },
+        { "name": "Whole Chicken", "price": "$60" }
+      ]
+    }
+  ]
+}

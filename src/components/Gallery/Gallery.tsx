@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 
 export default function Gallery () {
 
@@ -22,16 +22,19 @@ export default function Gallery () {
 	}, []);
 
 	return(
-		<section className='flex justify-center' >
+		<section className='flex justify-center my-4' >
 			<div className='mx-8 max-w-5xl'>
 				<div className="carousel carousel-center rounded-box justify-center">
 					{images.map((image, index) => (
 						<div key={index} className="carousel-item">
-							<img 
+							<Image 
 								src={image} 
 								loading="lazy"
 								alt="chicken rice" 
-								className="w-full max-w-[300px] h-auto object-cover"
+								width={300}
+								height={200}
+								style={{ width: '100%', height: 'auto' }}
+								className="h-auto object-cover"
 							/>							
 						</div>
 					))}
