@@ -39,7 +39,7 @@ export default function Contact () {
 						height={200} 
 						className='object-cover shadow-xl'
 						style={{ width: '100%', height: 'auto' }}
-						alt={'surrey-map'}				
+						alt='map of surrey'				
 					/>
 				</div>
 			</Card>
