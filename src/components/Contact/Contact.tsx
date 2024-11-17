@@ -1,6 +1,6 @@
-import { Card, CardFooter, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardHeader } from "@/components/ui/card"
 import Image from 'next/image';
-import { UserRound, Phone, Map, CalendarRange, CalendarHeart } from "lucide-react";
+import { UserRound, Phone, CalendarHeart } from "lucide-react";
 
 
 export default function Contact () {

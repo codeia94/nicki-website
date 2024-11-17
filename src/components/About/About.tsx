@@ -20,7 +20,7 @@ export default function About() {
 						</BoxReveal>
 						<BoxReveal boxColor={"#5046e6"} duration={0.5}>
 							<p className="mb-4 text-justify w-max-[800px]">
-								At NK Chicken Rice, we believe in the power of home-cooked meals to bring joy and comfort to people's
+								At NK Chicken Rice, we believe in the power of home-cooked meals to bring joy and comfort to people&apos;s
 								lives. Our passion for cooking and using fresh, locally-sourced ingredients sets us apart.
 								Founded in 2022 by Nicki Cheang, his small business has grown into a beloved part of the community, serving
 								delicious, homemade food that reminds you of family dinners and cherished memories.

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X } from 'lucide-react'
 import MySvgIcon from "../NkSvgIcon";
 import Link from "next/link";
@@ -6,7 +6,6 @@ import Link from "next/link";
 export default function Navigation (){
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const [activeSection, setActiveSection] = useState('home');
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
