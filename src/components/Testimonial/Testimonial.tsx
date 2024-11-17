@@ -9,12 +9,12 @@ const reviews = [
   },
   {
     name: "Lauren",
-    body: "That homemade chili sauce? Absolute perfection. It ties everything together beautifully.",
+    body: "That homemade chili sauce? Absolute perfection.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
     name: "James",
-    body: "This is hands-down the best chicken rice I’ve ever tasted. Every bite was heavenly!",
+    body: "This is hands-down the best chicken rice I’ve ever tasted. Each bite takes me back to Asia",
     img: "https://avatar.vercel.sh/john",
   },
   {
@@ -71,9 +71,9 @@ const ReviewCard = ({
 
 export default function Testimonial() {
   return (
-		<div className='flex flex-col justify-center items-center py-12'>
+		<div id="testimonials" className='flex flex-col justify-center items-center py-12'>
       <h2 className="text-6xl font-bold text-center mt-8 font-quintessential tracking-wider">See what others said!</h2>
-			<div id="testimonial" className=" flex h-[350px] w-full flex-col items-center justify-center max-w-5xl overflow-hidden bg-background">
+			<div className=" flex h-[350px] w-full flex-col items-center justify-center max-w-5xl overflow-hidden bg-background">
 				<Marquee pauseOnHover className="[--duration:20s]">
 					{firstRow.map((review) => (
 						<ReviewCard key={review.name} {...review} />

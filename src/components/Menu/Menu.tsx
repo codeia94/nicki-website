@@ -2,6 +2,8 @@ import { Card, CardFooter, CardContent, CardDescription, CardHeader, CardTitle }
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Separator } from "../ui/separator"
+import { CircleHelp } from 'lucide-react'
+import {Tooltip} from "@nextui-org/tooltip";
 
 type MenuItem = {
   name: string;
@@ -54,14 +56,21 @@ useEffect(() => {
 						</div>
 						<Separator orientation="vertical"/>
 						<div className='flex flex-col items-center w-1/2 py-1'>
-							<p>Whole Chicken</p>
+							<p className='flex flex-row'>
+								Whole Chicken
+								<Tooltip 
+									showArrow={true} 
+									content='Serves 6 portions'
+									className='text-sm bg-white px-1 rounded-lg shadow-lg'>
+								<span><CircleHelp className='w-3 ml-2'/></span>
+								</Tooltip>
+							</p>
 							<p>$60</p>
 						</div>
 					</CardContent>
 					<Separator className='mb-2' />
 					<CardFooter className='self-center flex flex-col'>
 						<small>All orders come with soup, chilli sauce & cucumber</small>
-						<small className='text-xs'>Whole chicken comes with 6 portions</small>
 					</CardFooter>
 				</Card>
 			))}

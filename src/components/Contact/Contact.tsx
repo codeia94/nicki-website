@@ -5,7 +5,7 @@ import { UserRound, Phone, Map, CalendarRange, CalendarHeart } from "lucide-reac
 
 export default function Contact () {
 	return (
-		<div className='max-w-6xl self-center flex mx-auto '>
+		<div id="contact" className='max-w-6xl self-center flex mx-auto '>
 			<Card className='flex flex-col xl:flex-row xl:gap-4 w-full'>
 				<div className="xl:w-1/2 flex flex-col justify-center p-6">
 					<CardHeader>
