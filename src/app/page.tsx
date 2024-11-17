@@ -8,6 +8,7 @@ import Menu from "@/components/Menu/Menu";
 import Testimonial from "@/components/Testimonial/Testimonial";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
+import SocialCTA from "@/components/SocialCTA/SocialCTA";
 
 export default function HomePage () {
   return (
@@ -22,6 +23,7 @@ export default function HomePage () {
         <Contact  />
       </main>
       <Footer />
+      <SocialCTA />
     </div>
   );
 }

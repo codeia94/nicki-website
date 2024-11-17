@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardHeader } from "@/components/ui/card"
 import Image from 'next/image';
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaRegUser, FaPhone, FaCalendar } from "react-icons/fa";
 import { IoPersonOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
 import { MdOutlineDateRange } from "react-icons/md";
@@ -12,16 +12,19 @@ export default function Contact () {
 				<div className="xl:w-1/2 flex flex-col justify-center p-6 items-center">
 					<CardHeader className="items-center">
 						<h1 className="text-6xl text-center mb-8 font-quintessential font-semibold tracking-wider ">Ready to order?</h1>
-						<CardDescription className=' flex flex-row gap-6 bg-white/30 backdrop-blur-lg rounded-xl items-center'>
+						<CardDescription className=' flex flex-row gap-6 bg-white/30 backdrop-blur-2xl rounded-xl items-center'>
 							<div className='text-lg space-y-6 m-6'>
 								<div className='flex align-middle items-center gap-4'>
-									<IoPersonOutline/><span className=''>Nicki Cheang</span>
+									<FaRegUser/><span className=''>Nicki Cheang</span>
 								</div>
 								<div className='flex align-middle items-center gap-4'>
-									<LuPhone /><span className=''>+1-604-7359893</span>
+									<FaPhone /><span className=''>+1-604-7359893</span>
 								</div>
 								<div className='flex align-middle items-center gap-4'>
-									<MdOutlineDateRange /><span className=' text-wrap'>Pick up days: Wednesday, Saturday & Sunday</span>
+									<FaWhatsapp/><a href='https://wa.me/16047359893' className=' text-wrap text-nk-blue hover:underline hover:underline-offset-4'>Click to order here!</a>
+								</div>
+								<div className='flex align-middle items-center gap-4'>
+									<FaCalendar /><span className=' text-wrap'>Pick up days: Wednesday, Saturday & Sunday</span>
 								</div>
 								<div className='flex align-middle items-center gap-4'>
 									<FaInstagram />
