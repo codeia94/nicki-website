@@ -1,9 +1,6 @@
 import { Card, CardDescription, CardHeader } from "@/components/ui/card"
 import Image from 'next/image';
 import { FaInstagram, FaWhatsapp, FaRegUser, FaPhone, FaCalendar } from "react-icons/fa";
-import { IoPersonOutline } from "react-icons/io5";
-import { LuPhone } from "react-icons/lu";
-import { MdOutlineDateRange } from "react-icons/md";
 
 export default function Contact () {
 	return (
@@ -37,10 +34,19 @@ export default function Contact () {
 									</a>
 								</div>
 							</div>
+							<div className='flex-grow'>
+								<Image 
+									src='/image/nkcr.jpeg'
+									alt='whatsapp-nkcr'
+									height={0}
+									width={200}
+									className='object-contain xl:w-full xl:h-full rounded-r-2xl'
+								/>
+							</div>
 						</CardDescription>
 					</CardHeader>
 				</div>
-				<div className="xl:w-1/2">
+				<div className="xl:w-1/2 self-center xl:mr-4">
 					<Image 
 						src='/image/surrey-map.png'
 						width={400}
